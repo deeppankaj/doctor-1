@@ -142,3 +142,7 @@ nav {
   transition: all 0.3s ease-in-out ;
   transform: scale(1.05);
 }
+footer{
+  background: #202942;
+  color: grey;
+}

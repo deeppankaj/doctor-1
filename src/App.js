@@ -1,6 +1,7 @@
 import { Route,Routes } from "react-router-dom";
 import { Home,Doctor,Shop,Cart,Profile } from "./Pages";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <Route path="/cart" element={<Cart/>} />
       <Route path="/profile" element={<Profile/>} />
     </Routes>
+    <Footer/>
     </>
   );
 }
