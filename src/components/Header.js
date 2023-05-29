@@ -1,25 +1,45 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import "./Home.css"
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Home.css";
+import { FiSearch } from "react-icons/fi";
+import { BiCart ,BiUser } from "react-icons/bi";
 
 const Header = () => {
-
   return (
     <>
-    <nav>
-    <div className="right">
-        <div className="logo"><img src="" alt="" /></div>
-        <div className='d-flex'>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/">Doctor</NavLink>
-            <NavLink to="/">Shop</NavLink>
+      <nav className="px-4 position-fixed col-12">
+        <div className="right d-flex col-6 gap-4 align-content-center">
+          <div className="logo-container mx-2">
+            <h4 className="mb-0" >Doctor</h4>
+          </div>
+
+          <div className="d-flex gap-4">
+            <NavLink className="nav-option" to="/">
+              Home
+            </NavLink>
+            <NavLink className="nav-option" to="/doctor">
+              Doctor
+            </NavLink>
+            <NavLink className="nav-option" to="/shop">
+              Shop
+            </NavLink>
+          </div>
         </div>
-        
-    </div>
-
-    </nav>
+        <div className="left col-6 row gap-2 justify-content-end">
+          <div className="nav-btn nav-icon">
+            <FiSearch />
+          </div>
+          <div className="nav-btn nav-icon">
+            <BiCart />
+          </div>
+          <div className="nav-btn nav-icon">
+            <BiUser />
+          </div>
+        </div>
+      </nav>
+      <div className="space"></div>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
