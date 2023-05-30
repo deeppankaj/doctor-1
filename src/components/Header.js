@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Home.css";
+import "./Home/Home.css";
 import { FiSearch } from "react-icons/fi";
 import { BiCart ,BiUser } from "react-icons/bi";
 
