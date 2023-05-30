@@ -85,7 +85,7 @@ const Appointment = () => {
                     <Link to="#" className="text-dark">
                       <div className="d-flex align-items-center">
                         <img src="../assets/images/doctors/01.jpg" className="avatar avatar-md-sm rounded-circle border shadow" alt="" style={{ height: '40px', width: '40px' }} />
-                        <span className="ms-2">{patient.docName}</span>
+                        <span className="ms-2">{patient.doctorName}</span>
                       </div>
                     </Link>
                   </td>
