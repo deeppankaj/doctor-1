@@ -142,7 +142,69 @@ nav {
   transition: all 0.3s ease-in-out ;
   transform: scale(1.05);
 }
-footer{
+footer {
   background: #202942;
-  color: grey;
+  padding: 60px 0 24px;
+  position: relative;
+  color: #adb5bd
 }
+
+footer .text-foot {
+  color: #adb5bd;text-decoration: none;
+}
+
+footer .footer-head {
+  font-size: 18px !important;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #fff
+}
+
+footer .footer-list {
+  margin-bottom: 0
+}
+
+footer .footer-list li {
+  margin-bottom: 10px
+}
+
+footer .footer-list li a {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease
+}
+
+footer .footer-list li a:hover {
+  color: #e6e8ea
+}
+
+footer .footer-list li:last-child {
+  margin-bottom: 0
+}
+
+footer .footer-bar,
+footer.footer-bar {
+  border-top: 1px solid #2a3657
+}
+
+.bg-footer-color {
+  background-color: #fff !important
+}
+.social-icon li  {
+  color: #212529;
+  border: 1px solid #212529;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  line-height: 30px;
+  text-align: center;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  overflow: hidden;
+  position: relative;
+  border-radius: 80%;
+}
+.social-icon.footer-social li  {
+  color: #adb5bd;
+  border-color: #283453
+}
+
