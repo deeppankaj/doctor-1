@@ -39,7 +39,7 @@ const Sidebar = () => {
           </li>
           <li className="navbar-item">
             <Link to="/doctor/schedule" className="navbar-link">
-              <TfiTimer /> Schedule Timing
+              <TfiTimer /> ScheduleTiming
             </Link>
           </li>
           <li className="navbar-item">
