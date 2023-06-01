@@ -1,7 +1,7 @@
 import React from "react";
 import ReactStars from "react-stars";
 import { TbMapPin } from "react-icons/tb";
-import { BiDollarCircle, BiTime, BiHeart } from "react-icons/bi";
+import { BiDollarCircle, BiTime } from "react-icons/bi";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import vacc from "../../assests/images/vacc.png";
 import { Link } from "react-router-dom";

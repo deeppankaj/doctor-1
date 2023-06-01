@@ -310,8 +310,8 @@ const Dashboard = () => {
                   <>
                     {patients.map((patient, i) => {
                       return (
-                        <Link to="">
-                          <div key={i} className="d-flex align-items-center justify-content-between">
+                        <Link key={i} to="">
+                          <div className="d-flex align-items-center justify-content-between">
                             <div className="d-inline-flex">
                               <img
                                 src={user}
@@ -358,8 +358,8 @@ const Dashboard = () => {
                   <>
                     {upcomingpatients.map((patient, i) => {
                       return (
-                        <Link to="">
-                          <div key={i} className="d-flex align-items-center justify-content-between">
+                        <Link key={i} to="">
+                          <div  className="d-flex align-items-center justify-content-between">
                             <div className="d-inline-flex">
                               <img
                                 src={user}

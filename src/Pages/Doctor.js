@@ -17,9 +17,9 @@ import {
 const Doctor = () => {
   return (
     <>
-      <section class="py-3 ">
-        <div class="container-fluid">
-          <div class="row">
+      <section className="py-3 ">
+        <div className="container-fluid">
+          <div className="row">
             <Sidebar />
             <Routes className="hi">
               <Route path="*" element={<Dashboard />} />

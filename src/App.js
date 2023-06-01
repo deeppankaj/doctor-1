@@ -4,7 +4,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Contact from "./Pages/Contact";
 import PatientPage from "./Pages/Pateint";
+import MiniFooter from "./components/MiniFooter";
 function App() {
+  const route = window.location.pathname.toString().split("/")[1];
   return (
     <>
     <Header/>
@@ -17,7 +19,7 @@ function App() {
       <Route path="/contact" element={<Contact/>} />
       <Route path="/patient/*" element={<PatientPage/>} />   
     </Routes>
-    <Footer/>
+    {route===("patient"||"doctor")?(<><MiniFooter/></>):(<><Footer/></>)}
     </>
   );
 }

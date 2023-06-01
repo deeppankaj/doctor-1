@@ -1,18 +1,15 @@
 import React from "react";
-import { Route,Routes } from "react-router-dom";
 import Dashboard from "../components/patient-dash/Dashboard";
 import SidebarPatient from "../components/patient-dash/Sidebar";
 
 const PatientPage = () => {
   return (
     <>
-      <section class="py-3 ">
-        <div class="container-fluid">
-          <div class="row">
+      <section className="py-3 ">
+        <div className="container-fluid">
+          <div className="row">
             <SidebarPatient />
-            <Routes className="hi">
-              <Route path="*" element={<Dashboard />} />
-            </Routes>
+            <Dashboard/>
           </div>
         </div>
       </section>

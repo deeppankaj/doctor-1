@@ -3,14 +3,7 @@
   --primary-color: #396cf0;
   --primary-soft-color: #396df025;
 }
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.bg-overlay {
-  background: black;
-}
+
 
 /* ###################### Navbar ##################### */
 

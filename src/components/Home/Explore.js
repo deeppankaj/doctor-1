@@ -97,7 +97,7 @@ const Explore = () => {
               <p className="para-desc text-muted">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
               <p className="para-desc text-muted">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.</p>
               <div className="mt-4">
-                <Link href="/about" className="btn ">Read More</Link>
+                <Link to="/about" className="btn ">Read More</Link>
               </div>
             </div>
           </div>
@@ -105,11 +105,11 @@ const Explore = () => {
           <div className="col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
             <div className="position-relative">
               <img src={about} className="img-fluid" alt="" />
-              <div className="play-icon">
-                <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" className="play-btn lightbox video-play-icon">
+              {/* <div className="play-icon">
+                <a to="" data-type="youtube" data-id="yba7hPeTSjk" className="play-btn lightbox video-play-icon">
                   <i className="mdi mdi-play text-primary rounded-circle shadow"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

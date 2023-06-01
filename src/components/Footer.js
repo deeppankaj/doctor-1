@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-5 col-lg-4 mb-0 mb-md-4 pb-0 pb-md-2">
-            <a href="#" className="logo-footer">
+            <Link to="/" className="logo-footer">
               <img src="../assets/images/logo-light.png" height="22" alt="" />
-            </a>
+            </Link>
             <p className="mt-4 me-xl-5">
               Great doctor if you need your family member to get effective
               immediate assistance, emergency treatment or a simple
@@ -84,12 +84,12 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="departments.html" className="text-foot">
+                    <Link to="/" className="text-foot">
                       <FiChevronRight /> Gynecology
                     </Link>
                   </li>
                   <li>
-                    <Link href="departments.html" className="text-foot">
+                    <Link to="/" className="text-foot">
                       <FiChevronRight /> Neurology
                     </Link>
                   </li>
@@ -112,12 +112,12 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="d-flex align-items-center">
-                    <a
-                      href="javascript:void(0)"
+                    <Link
+                      to="/"
                       className="video-play-icon text-foot ms-2"
                     >
                       <FiMapPin/> on Google map
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <ul className="list-unstyled social-icon footer-social mb-0 mt-4">
@@ -158,11 +158,11 @@ const Footer = () => {
                   {new Date().getFullYear()} © Doctris. Design with{" "}
                   <FiHeart fill="red" color="red"/> by{" "}
                   <Link
-                    href="https://shreethemes.in/"
+                    to="/"
                     target="_blank"
                     className="text-reset text-decoration-none"
                   >
-                    Shreethemes
+                    DeepNapSoftTech Project
                   </Link>
                   .
                 </p>
