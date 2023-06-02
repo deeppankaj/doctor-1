@@ -101,7 +101,7 @@ const Footer = () => {
                   <li className="d-flex align-items-center">
                     <a
                       href="mailto:contact@example.com"
-                      className="text-foot ms-2"
+                      className="text-foot ms-1"
                     >
                      <BsEnvelope/> contact@example.com
                     </a>

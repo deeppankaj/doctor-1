@@ -11,7 +11,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <>
-      <div className="col-12 shadow mb-2">
+      <div className="col-12 shadow position-fixed header-nav">
       <nav className="container ">
         <div className="right d-flex col-6 gap-4 align-content-center">
           <div>
@@ -64,6 +64,7 @@ const Header = () => {
           </>)}
       </nav>
       </div>
+      <div className="col-12" style={{height:"60px"}}></div>
     </>
   );
 };

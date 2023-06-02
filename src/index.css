@@ -23,9 +23,7 @@
     justify-content: center;
     align-items: center;
   }
-  .bg-overlay {
-    background: black;
-  }
+
   .bg-soft-primary {
       background-color: rgba(57, 108, 240, .1) !important;
       border: 1px solid rgba(57, 108, 240, .1) !important;
@@ -193,3 +191,6 @@
     left:0px;
     z-index: 99;
   }
+  .mt-100 {
+    margin-top: 100px;
+}
