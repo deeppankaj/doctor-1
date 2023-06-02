@@ -11,13 +11,14 @@ const Header = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <>
-      <nav className="px-4 col-12 ">
+      <div className="col-12 shadow mb-2">
+      <nav className="container ">
         <div className="right d-flex col-6 gap-4 align-content-center">
           <div>
             {!toggle &&<FaBars fontSize={22} className="d-md-none" onClick={()=>setToggle(true)} />}
             {toggle &&<RxCross2 fontSize={22} className="d-md-none" onClick={()=>setToggle(false)} />}
           </div>
-          <div className="logo-container mx-2">
+          <div className="logo-container">
             <h4 className="mb-0">Doctor</h4>
           </div>
 
@@ -62,6 +63,7 @@ const Header = () => {
           </div>
           </>)}
       </nav>
+      </div>
     </>
   );
 };
