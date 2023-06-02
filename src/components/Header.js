@@ -47,16 +47,16 @@ const Header = () => {
         </div>
         {toggle && (<>
             <div className="mobile-menu d-md-none text-muted position-absolute col-12 bg-white d-flex flex-column col-12 gap-4 align-content-center p-4 shadow">
-            <NavLink to="/">
+            <NavLink onClick={()=>setToggle(false)} to="/">
               Home
             </NavLink>
-            <NavLink to="/doctor">
+            <NavLink onClick={()=>setToggle(false)} to="/doctor">
               Doctor
             </NavLink>
-            <NavLink to="/patient">
+            <NavLink onClick={()=>setToggle(false)} to="/patient">
               Patient
             </NavLink>
-            <NavLink to="/shop">
+            <NavLink onClick={()=>setToggle(false)} to="/shop">
               Shop
             </NavLink>
           </div>
