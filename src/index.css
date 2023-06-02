@@ -188,3 +188,8 @@
   .btn.btn-pills {
       border-radius: 30px
   }
+ nav .mobile-menu{
+    top:60px;
+    left:0px;
+    z-index: 99;
+  }

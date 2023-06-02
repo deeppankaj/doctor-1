@@ -1,24 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Home/Home.css";
 import { FiSearch } from "react-icons/fi";
-import { BiCart ,BiUser } from "react-icons/bi";
+import { BiCart, BiUser } from "react-icons/bi";
+import { FaBars } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
+  const user = true;
+  const [toggle, setToggle] = useState(false)
   return (
     <>
-      <nav className="px-4  col-12 ">
+      <nav className="px-4 col-12 ">
         <div className="right d-flex col-6 gap-4 align-content-center">
+          <div>
+            {!toggle &&<FaBars fontSize={22} className="d-md-none" onClick={()=>setToggle(true)} />}
+            {toggle &&<RxCross2 fontSize={22} className="d-md-none" onClick={()=>setToggle(false)} />}
+          </div>
           <div className="logo-container mx-2">
-            <h4 className="mb-0" >Doctor</h4>
+            <h4 className="mb-0">Doctor</h4>
           </div>
 
-          <div className="d-flex gap-4">
+          <div className="d-md-flex d-none gap-4 text-muted ">
             <NavLink className="nav-option" to="/">
               Home
             </NavLink>
             <NavLink className="nav-option" to="/doctor">
               Doctor
+            </NavLink>
+            <NavLink className="nav-option" to="/patient">
+              Patient
             </NavLink>
             <NavLink className="nav-option" to="/shop">
               Shop
@@ -32,10 +43,24 @@ const Header = () => {
           <div className="nav-btn nav-icon">
             <BiCart />
           </div>
-          <div className="nav-btn nav-icon">
-            <BiUser />
-          </div>
+          <div className="nav-btn nav-icon">{user && <BiUser />}</div>
         </div>
+        {toggle && (<>
+            <div className="mobile-menu d-md-none text-muted position-absolute col-12 bg-white d-flex flex-column col-12 gap-4 align-content-center p-4 shadow">
+            <NavLink to="/">
+              Home
+            </NavLink>
+            <NavLink to="/doctor">
+              Doctor
+            </NavLink>
+            <NavLink to="/patient">
+              Patient
+            </NavLink>
+            <NavLink to="/shop">
+              Shop
+            </NavLink>
+          </div>
+          </>)}
       </nav>
     </>
   );

@@ -6,7 +6,7 @@ import "./patientdash.css"
 
 const SidebarPatient = () => {
   return (
-    <div className="col-xl-3 col-lg-4 col-md-5 col-12">
+    <div className="col-xl-3 col-lg-4 col-md-5 col-12 mb-4 position-lg-fixed">
       <div className="card border-0 p-4 rounded shadow overflow-hidden sticky-bar">
         <div className="d-md-flex text-center text-md-start align-items-center">
           <Avatar src="../assets/images/client/09.jpg" size="md-md" roundedCircle border shadow alt="" />
@@ -99,6 +99,7 @@ const SidebarPatient = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

@@ -23,7 +23,7 @@ function App() {
       <Route path="/contact" element={<Contact/>} />
       <Route path="/patient/*" element={<PatientPage/>} />   
     </Routes>
-    {route===("patient"||"doctor")?(<><MiniFooter/></>):(<><Footer/></>)}
+    {route===("patient"&&"doctor")?(<><MiniFooter/></>):(<><Footer/></>)}
     </>
   );
 }
