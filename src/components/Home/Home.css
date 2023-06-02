@@ -15,18 +15,15 @@ nav {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 99999;
 }
-.space {
-  height: 60px;
-}
-.nav-option {
+nav .nav-option {
   color: black;
   font-size: 1.2rem;
   text-decoration: none;
 }
-.nav-option:hover {
+nav .nav-option:hover {
   color: #396cf0;
 }
-.nav-icon {
+nav .nav-icon {
   width: 30px;
   height: 30px;
   display: flex;
@@ -34,16 +31,16 @@ nav {
   align-items: center;
   cursor: pointer;
 }
-.nav-btn {
+nav .nav-btn {
   background: #396cf0;
   color: white;
   border-radius: 200px;
   padding: 1px;
 }
-.nav-btn:hover {
+nav .nav-btn:hover {
   background: #305ccc;
 }
-.user-menu {
+nav .user-menu {
   border: 1px solid white;
 }
 /* ###################### Find doctor section ##################### */
@@ -55,10 +52,10 @@ nav {
     padding-top: 4vh;
   }
 }
-.search-form {
+.hero .search-form {
   width: fit-content;
 }
-.search-form input {
+.hero .search-form input {
   margin-left: 8px;
   border: none;
   width: 70%;
@@ -81,7 +78,7 @@ nav {
 .explore-section .link {
   color:#396cf0 ;
 }
-.explore-icon {
+.explore-section .explore-icon {
   width: 60px;
   height: 60px;
   font-size: 30px;

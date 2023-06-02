@@ -7,7 +7,7 @@ import { BiCart ,BiUser } from "react-icons/bi";
 const Header = () => {
   return (
     <>
-      <nav className="px-4 position-fixed col-12 ">
+      <nav className="px-4  col-12 ">
         <div className="right d-flex col-6 gap-4 align-content-center">
           <div className="logo-container mx-2">
             <h4 className="mb-0" >Doctor</h4>
@@ -37,7 +37,6 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <div className="space"></div>
     </>
   );
 };

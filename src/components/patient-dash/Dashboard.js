@@ -1,5 +1,6 @@
 import React from "react";
-import { BsDropletHalf, BsEmojiSmile, BsHeart, BsHeartFill, BsMessenger, BsPaperclip } from "react-icons/bs";
+import { BsDropletHalf ,BsHeart, BsHeartFill } from "react-icons/bs";
+// import {  BsEmojiSmile, BsMessenger, BsPaperclip } from "react-icons/bs";
 import { RxDotsHorizontal } from "react-icons/rx";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import { TbBrandTelegram, TbClipboardText } from "react-icons/tb";
