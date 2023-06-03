@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Home/Home.css";
 import { FiSearch } from "react-icons/fi";
 import { BiCart, BiUser } from "react-icons/bi";
@@ -41,9 +41,9 @@ const Header = () => {
           <div className="nav-btn nav-icon">
             <FiSearch />
           </div>
-          <div className="nav-btn nav-icon">
+          <Link to={"/cart"} className="nav-btn nav-icon">
             <BiCart />
-          </div>
+          </Link>
           <div className="nav-btn nav-icon">{user && <BiUser />}</div>
         </div>
         {toggle && (<>
